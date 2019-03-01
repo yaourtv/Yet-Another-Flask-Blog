@@ -1,0 +1,4 @@
+.vscode
+pyenv
+project.db
+__pycache__
