@@ -2,3 +2,5 @@
 pyenv
 project.db
 __pycache__
+flaskproj/static/profile_pics/*
+!flaskproj/static/profile_pics/def.jpg
