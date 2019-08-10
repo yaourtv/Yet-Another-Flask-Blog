@@ -78,30 +78,49 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+  /* Magic navbar redesign! */
+  .navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .navbar-brand{
+      padding-top: 13px;
+      padding-bottom: 13px;
+  }
+  .navbar-collapse{
+    height: 56px;
+  }
+  .dropdown-item:active{
+    background-color: #344152;
+  }
 
   .btn-custom{
     color:#fff;
     background-color:#607889;
     border-color:#607889;
     width: 160px;
+    height: 56px;
+    border-radius: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .btn-custom:hover{
     color:#fff;
-    background-color:#5a6268;
-    border-color:#545b62
+    background-color:#3a4955;
+    border-color:#3a4955;
   }
   .btn-custom.focus,.btn-custom:focus{
     box-shadow:0 0 0 .2rem rgba(130,138,145,.5)
   }
   .btn-custom.disabled,.btn-custom:disabled{
     color:#fff;
-    background-color:#6c757d;
-    border-color:#6c757d
+    background-color:#344152;
+    border-color:#344152
   }
   .btn-custom:not(:disabled):not(.disabled).active,.btn-custom:not(:disabled):not(.disabled):active,.show>.btn-custom.dropdown-toggle{
     color:#fff;
-    background-color:#545b62;
-    border-color:#4e555b
+    background-color:#344152;
+    border-color:#344152
   }
   .btn-custom:not(:disabled):not(.disabled).active:focus,.btn-custom:not(:disabled):not(.disabled):active:focus,.show>.btn-customy.dropdown-toggle:focus{
     box-shadow:0 0 0 .2rem rgba(130,138,145,.5)
