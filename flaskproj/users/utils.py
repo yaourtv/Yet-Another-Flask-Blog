@@ -1,16 +1,16 @@
 import os
 import secrets
 from PIL import Image
-from flask import url_for
+from flask import url_for, current_app
 from flask_mail import Message
-from flaskproj import mail, app
+from flaskproj import mail
 
 def save_pic(form_picture):
     _, f_ext = os.path.splitext(form_picture.filename)
     fname = secrets.token_hex(8) + f_ext
     thumb = Image.open(form_picture)
     thumb.thumbnail((125,125))
-    thumb.save(os.path.join(app.root_path, 'static/profile_pics', fname))
+    thumb.save(os.path.join(current_app.root_path, 'static/profile_pics', fname))
     return fname
 
 def send_reset_email(user):
