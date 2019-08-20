@@ -16,5 +16,6 @@ This is a simple Flask application, made using Flask libraries and a
 9. Everything that would appear in error messages when you'll run `python run.py`
 
 
+Or just run `pip install -r requirements.txt`. It would install only-required libs with correct version.<br>>
 Python 3.x.x<br>
-Environment variables `EMAIL_USERNAME` and `EMAIL_PASSWORD` (could be changed in [\_\_init__.py](/flaskproj/__init__.py) file).
+Environment variables `EMAIL_USERNAME` and `EMAIL_PASSWORD` (could be changed in [config.py](/flaskproj/config.py) file).
